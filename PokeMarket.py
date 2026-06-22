@@ -31,7 +31,7 @@ with st.sidebar.form(key="form_registro"):
     detalles_adicionales = st.text_area("Detalles Adicionales (AN200)", max_chars=200)
     id_usuario_dueno = st.text_input("Tu ID de Usuario (AN20)", value="Trainer_Ash")
     
-    botón_guardar = st.form_submit_form_button("Publicar Carta")
+    botón_guardar = st.form_submit_button("Publicar Carta")
 
 # Lógica para guardar el registro (simulando escritura en archivo)
 if botón_guardar:
