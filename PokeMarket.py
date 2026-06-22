@@ -28,7 +28,7 @@ with st.sidebar.form(key="form_registro"):
     modalidad = st.radio("Modalidad (AN15)", ["Venta", "Intercambio", "Ambas"])
     
     precio = st.number_input("Precio ($) (N10,2)", min_value=0.0, step=0.5, value=0.0)
-    detalles_adicionales = st.text_area("Detalles Adicionales (AN200)", max_value_chars=200)
+    detalles_adicionales = st.text_area("Detalles Adicionales (AN200)", max_chars=200)
     id_usuario_dueno = st.text_input("Tu ID de Usuario (AN20)", value="Trainer_Ash")
     
     botón_guardar = st.form_submit_form_button("Publicar Carta")
